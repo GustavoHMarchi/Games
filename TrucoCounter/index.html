@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truco Counter</title>
+    <link rel="stylesheet" href="../TrucoCounter/style.css">
+</head>
+<body>
+    <div class="inicio" id="inicio">
+        <div class="nome">
+            <span>Nome da equipe 1:</span>
+            <input type="text" id="nomeEquipe1">
+        </div>
+        <div class="nome">
+            <span>Nome da equipe 2:</span>
+            <input type="text" id="nomeEquipe1">
+        </div>
+        <button onclick="publicarNome()">Salvar nomes</button>
+    </div>
+    <div class="contador" id="contador">
+        <div class="pontosEquipe1">
+            <h2 class="pontos1" id="pontos1">0</h2>
+            <button onclick="add1E1" class="add1">+1</button>
+            <button onclick="add3E1" class="add3">+3</button>
+            <button onclick="add6E1" class="add6">+6</button>
+            <button onclick="add9E1" class="add9">+9</button>
+            <button onclick="add12E1" class="add12">+12</button>
+        </div>
+        <div class="pontosEquipe2">
+            <h2 class="pontos2" id="pontos2">0</h2>
+            <button onclick="add1E2" class="add1">+1</button>
+            <button onclick="add3E2" class="add3">+3</button>
+            <button onclick="add6E2" class="add6">+6</button>
+            <button onclick="add9E2" class="add9">+9</button>
+            <button onclick="add12E2" class="add12">+12</button>
+        </div>
+    </div>
+</body>
+</html>
