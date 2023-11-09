@@ -4,3 +4,19 @@
 body{
     background-color: #333333;
 }
+.Titulo{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.Titulo h1{
+    margin: 4px;
+}
+.vermelho{
+    color: #b30000;
+}
+.branco{
+    color: #ffffff;
+}
