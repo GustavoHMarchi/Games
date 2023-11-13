@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Truco Counter</title>
     <link rel="stylesheet" href="../TrucoCounter/style.css">
+    <script src="../TrucoCounter/script.js"></script>
 </head>
 <body>
     <div class="Titulo"><h1 class="vermelho">Truco</h1><h1 class="branco">counter</h1></div>
@@ -15,39 +16,44 @@
         </div>
         <div class="nome">
             <span>Nome da equipe 2:</span>
-            <input type="text" id="nomeEquipe1">
+            <input type="text" id="nomeEquipe2">
         </div>
         <button onclick="publicarNome()">Salvar nomes</button>
     </div>
     <div class="contador" id="contador">
         <div class="pontosEquipe">
+            <div id="Nome1"></div>
             <h2 class="pontos" id="pontos1">0</h2>
             <div class="blocoA">
-                <button onclick="add1E1" class="add1">+1</button>
-                <button onclick="add3E1" class="add3">+3</button>
+                <button onclick="add1E1()" class="add1">+1</button>
+                <button onclick="add3E1()" class="add3">+3</button>
             </div>
             <div class="blocoB">
-                <button onclick="add6E1" class="add6">+6</button>
-                <button onclick="add9E1" class="add9">+9</button>
+                <button onclick="add6E1()" class="add6">+6</button>
+                <button onclick="add9E1()" class="add9">+9</button>
             </div>
             <div class="blocoC">
-                <button onclick="add12E1" class="add12">+12</button>
+                <button onclick="add12E1()" class="add12">+12</button>
             </div>
         </div>
         <div class="pontosEquipe">
+            <div id="Nome2"></div>
             <h2 class="pontos" id="pontos2">0</h2>
             <div class="blocoA">
-                <button onclick="add1E2" class="add1">+1</button>
-                <button onclick="add3E2" class="add3">+3</button>
+                <button onclick="add1E2()" class="add1">+1</button>
+                <button onclick="add3E2()" class="add3">+3</button>
             </div>
             <div class="blocoB">
-                <button onclick="add6E2" class="add6">+6</button>
-                <button onclick="add9E2" class="add9">+9</button>
+                <button onclick="add6E2()" class="add6">+6</button>
+                <button onclick="add9E2()" class="add9">+9</button>
             </div>
             <div class="blocoC">
-                <button onclick="add12E2" class="add12">+12</button>
+                <button onclick="add12E2()" class="add12">+12</button>
             </div>
         </div>
+    </div>
+    <div class="mensagem" id="mensagem">
+        <h1>Parabéns equipe<span class="EquipeWin"></span>,vocês venceram o jogo!!</h1>
     </div>
 </body>
 </html>
